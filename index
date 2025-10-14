@@ -72,7 +72,7 @@
       <!-- Header with Logo -->
       <tr>
         <td class="header">
-          <img src="https://homax.ua/content/images/2/200x68l90nn0/71963954605970.webp" alt="{{BrandName}} Logo" />
+          <img src="http://example.com/" alt="{{BrandName}} Logo" />
           <span>{{BrandName}} | Хелоуін
         </td>
       </tr>
