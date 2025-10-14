@@ -1,0 +1,109 @@
+<!-- SendPulse Responsive Email Template: Black Friday Promo with Logo -->
+<!doctype html>
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Ваш промокод від {{BrandName}}</title>
+
+<style type="text/css">
+  body { margin:0; padding:0; background-color:#FFFFFF; font-family: "Montserrat", sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+  table { border-spacing:0; border-collapse:collapse; }
+  img { border:0; line-height:100%; vertical-align:middle; max-width:100%; height:auto; }
+  a { text-decoration:none; color:inherit; }
+
+  .wrapper { width:100%; table-layout:fixed; background-color:#FFFFFF; padding:20px 0; }
+  .main { background-color:#FFFFFF; margin:0 auto; width:100%; max-width:600px; border-radius:6px; overflow:hidden; border:1px solid #e6e6e6; }
+
+  /* Header with Logo */
+  .header { background-color: #6a6a6a; text-align: center; padding: 20px 10px; }
+  .header img { max-height: 60px; width: auto; display: block; margin: 0 auto 10px auto; }
+  .header span { display:block; color: #e4032e; font-size: 18px; font-weight:bold; margin-top:5px;  background: linear-gradient(90deg, #FFD700, #FF3B3F, #FF9500, #FFD700);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 4s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}}
+
+  .content { padding: 30px 40px; font-size: 15px; color: #222; line-height: 1.6; }
+  .greeting { font-weight:600; font-size:16px; margin-bottom:10px; }
+
+  /* Promo Card */
+  .promo-card { background-color: #f9f9f9; border:1px solid #ddd; border-radius:8px; text-align:center; padding:25px 20px; margin:25px 0; }
+  .promo-card h2 { color:#4a4949; font-size:20px; margin:0 0 10px; }
+  .promo-card p { color:#555; font-size:14px; margin:0 0 16px; }
+  .promo-code { display:inline-block; border:2px dashed #e4032e; color:#e4032e; font-size:18px; font-weight:bold; padding:12px 22px; border-radius:6px; background-color:#fff; letter-spacing:0.06em; }
+  .expire { font-size:12px; color:#666; margin-top:10px; }
+  .btn { display:inline-block; background-color:#e4032e; color:#fff !important; padding:12px 24px; border-radius:6px; font-weight:bold; text-transform:uppercase; margin-top:18px; }
+
+  /* Footer */
+  .footer { background-color:#4a4949; color:#fff; font-size:12px; text-align:center; padding:20px 10px; line-height:1.5; }
+  .footer a { color:#e4032e; text-decoration:underline; }
+
+  /* Responsive */
+  @media screen and (max-width:600px) {
+    .content { padding:20px 16px !important; }
+    .promo-card { padding:20px 15px; }
+    .promo-code { font-size:16px; padding:10px 18px; }
+    .header img { max-height:50px; }
+  }
+
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    body, .wrapper, .main { background-color:#121212 !important; color:#f1f1f1 !important; }
+    .promo-card { background-color:#1e1e1e !important; border-color:#333 !important; }
+    .promo-code { background-color:#262626 !important; color:#ff4b4b !important; border-color:#ff4b4b !important; }
+    .footer { background-color:#1b1b1b !important; color:#aaa !important; }
+  }
+</style>
+</head>
+
+<body>
+  <center class="wrapper">
+    <table class="main" role="presentation" cellpadding="0" cellspacing="0" width="100%">
+      <!-- Header with Logo -->
+      <tr>
+        <td class="header">
+          <img src="http://example.com/" alt="{{BrandName}} Logo" />
+          <span>{{BrandName}} | Хелоуін
+        </td>
+      </tr>
+
+      <!-- Content -->
+      <tr>
+        <td class="content">
+          <p class="greeting">Вітаємо, {{Name}}!</p>
+          <p>Команда {{BrandName}} дякує вам за довіру! На честь Чорної Пʼятниці ми підготували для вас спеціальний персональний промокод зі знижкою.</p>
+
+          <div class="promo-card">
+            <h2>Ваш промокод</h2>
+            <p>Скопіюйте код і застосуйте його під час оформлення замовлення:</p>
+            <div class="promo-code">{{PromoCode}}</div>
+            <div class="expire">Діє до {{ExpireDate}}</div>
+            <a href="{{StoreURL}}" class="btn" target="_blank">Перейти до магазину</a>
+            
+          </div>
+
+          <p style="font-size:13px; color:#555;">Пропозиція діє лише на вибрані товари. Деталі — на сайті {{BrandName}}.</p>
+        </td>
+      </tr>
+
+      <!-- Footer -->
+      <tr>
+        <td class="footer">
+          © {{BrandName}}, 2025. Усі права захищені.<br>
+          <a href="{{UnsubscribeUrl}}">Відписатися від розсилки</a>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
